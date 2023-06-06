@@ -1,0 +1,278 @@
+.card {
+  position: relative;
+  width: 450px;
+  height: 265px;
+  border-radius: 24px;
+}
+
+.profileImg {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: calc(50% - 81px / 2 - 152px);
+  top: calc(50% - 84px / 2 - 63px);
+  border: 5px solid #ffffff;
+  border-radius: 100px;
+  background-color: #e6a90c;
+}
+
+.uid {
+  box-sizing: border-box;
+  position: absolute;
+  width: 88px;
+  height: 17px;
+  left: calc(50% - 88px / 2 - 152px);
+  top: calc(50% - 17px / 2 + 3px);
+  background: rgba(19, 19, 19, 0.5);
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+
+.uidNum {
+  color: #d3d3d3;
+  position: absolute;
+  left: 4px;
+  top: 18%;
+  font-size: 9px;
+}
+
+.name {
+  position: absolute;
+  left: calc(50% - 55px / 2 - 51px);
+  top: calc(50% - 40px / 2 - 85px);
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.sign {
+  position: absolute;
+  left: calc(50% - 119px / 2 - 19px);
+  top: calc(50% - 20px / 2 - 53px);
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.ar {
+  position: absolute;
+  width: 287px;
+  height: 22px;
+  left: calc(50% - 287px / 2 + 58px);
+  top: calc(50% - 22px / 2 - 11px);
+  background: rgba(19, 19, 19, 0.25);
+  border-radius: 5px;
+}
+
+.arText {
+  position: absolute;
+  left: 5px;
+  top: 10%;
+  color: #d3d3d3;
+  font-size: 15px;
+}
+
+.arNum {
+  position: absolute;
+  left: 258px;
+  color: #d3d3d3;
+  font-size: 15px;
+}
+
+.wl {
+  position: absolute;
+  width: 287px;
+  height: 22px;
+  left: calc(50% - 287px / 2 + 58px);
+  top: calc(50% - 22px / 2 + 20px);
+  background: rgba(19, 19, 19, 0.25);
+  border-radius: 5px;
+}
+
+.wlText {
+  position: absolute;
+  left: 10px;
+  top: 10%;
+  color: #d3d3d3;
+  font-size: 15px;
+}
+
+.wlNum {
+  position: absolute;
+  left: 258px;
+  color: #d3d3d3;
+  font-size: 15px;
+}
+
+.pamer {
+  position: absolute;
+  width: 287px;
+  height: 58px;
+  left: calc(50% - 287px / 2 + 58px);
+  top: calc(50% - 58px / 2 + 71px);
+  background: rgba(19, 19, 19, 0.25);
+  border-radius: 5px;
+}
+
+.achiev {
+  position: absolute;
+  width: 47px;
+  height: 48px;
+  left: 10px;
+  top: 10%;
+}
+
+.achievText {
+  position: absolute;
+  left: 60px;
+  top: 13%;
+  font-size: 12px;
+  color: #d3d3d3;
+}
+
+.achievNum {
+  position: absolute;
+  left: 60px;
+  top: 40%;
+  font-size: 23px;
+  color: #d3d3d3;
+}
+
+.spiral {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 150px;
+  top: 10%;
+}
+
+.spiralText {
+  position: absolute;
+  left: 200px;
+  top: 13%;
+  font-size: 12px;
+  color: #d3d3d3;
+}
+
+.spiralNum {
+  position: absolute;
+  left: 200px;
+  top: 40%;
+  font-size: 23px;
+  color: #d3d3d3;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 310px;
+    height: 182px;
+  }
+
+  .profileImg {
+    width: 56px;
+    height: 57px;
+    left: calc(50% - 56px / 2 - 105px);
+    top: calc(50% - 57px / 2 - 43px);
+    border: 3px solid #ffffff;
+  }
+
+  .uid {
+    width: 61px;
+    height: 11px;
+    left: calc(50% - 61px / 2 - 105px);
+    top: calc(50% - 11px / 2 + 2px);
+  }
+
+  .uidNum {
+    font-size: 6px;
+  }
+
+  .name {
+    left: calc(50% - 53px / 2 - 28px);
+    top: calc(50% - 26px / 2 - 58px);
+    font-size: 24px;
+  }
+
+  .sign {
+    left: calc(50% - 82px / 2 - 13px);
+    top: calc(50% - 13px / 2 - 36px);
+    font-size: 13x;
+  }
+
+  .ar {
+    width: 198px;
+    height: 15px;
+    left: calc(50% - 198px / 2 + 40px);
+    top: calc(50% - 15px / 2 - 7px);
+  }
+
+  .arText {
+    left: 5px;
+    font-size: 11px;
+  }
+
+  .arNum {
+    left: 170px;
+    font-size: 11px;
+  }
+
+  .wl {
+    width: 198px;
+    height: 15px;
+    left: calc(50% - 198px / 2 + 40px);
+    top: calc(50% - 15px / 2 + 13px);
+  }
+
+  .wlText {
+    left: 5px;
+    font-size: 11px;
+  }
+
+  .wlNum {
+    left: 178px;
+    font-size: 11px;
+  }
+
+  .pamer {
+    width: 198px;
+    height: 40px;
+    left: calc(50% - 198px / 2 + 40px);
+    top: calc(50% - 40px / 2 + 49px);
+  }
+
+  .achiev {
+    width: 33px;
+    height: 33px;
+    left: 1px;
+    top: 10%;
+  }
+
+  .achievText {
+    left: 37px;
+    top: 13%;
+    font-size: 9px;
+  }
+
+  .achievNum {
+    left: 37px;
+    top: 40%;
+    font-size: 15px;
+  }
+
+  .spiral {
+    width: 33px;
+    height: 33px;
+    left: 101px;
+    top: 10%;
+  }
+
+  .spiralText {
+    left: 135px;
+    top: 13%;
+    font-size: 9px;
+  }
+
+  .spiralNum {
+    left: 135px;
+    top: 40%;
+    font-size: 15px;
+  }
+}

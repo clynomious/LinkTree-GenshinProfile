@@ -1,23 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ParticlesBg from "particles-bg";
+import "./App.css";
+import Profile from "./components/Profile";
+import { BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
+import { FaFacebookSquare, FaTiktok } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="card">
+        <div className="card-body">
+          <div className="profile">
+            <img
+              src="./assets/profile.jpg"
+              alt="profile"
+              className="profileImg"
+            />
+            <h1 className="name">Fajar</h1>
+            <p className="sign">
+              Just a{"  "}
+              <span className="typewriter">
+                <Typewriter
+                  options={{
+                    strings: ["Random Guy", "Gamers", "Web Developer"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
+            </p>
+          </div>
+          <Profile />
+          <div className="mt-16">
+            <a href="https://instagram.com/jar.cly" className="social">
+              <BsInstagram />
+              Instagram
+            </a>
+          </div>
+          <div className="mt-16">
+            <a href="https://fb.com/jar.cly" className="social">
+              <FaFacebookSquare />
+              Facebook
+            </a>
+          </div>
+          <div className="mt-16">
+            <a href="https://tiktok.com/@jar.cly" className="social">
+              <FaTiktok />
+              TikTok
+            </a>
+          </div>
+          <div className="mt-16">
+            <a href="https://twitter.com/siFajar277" className="social">
+              <BsTwitter />
+              Twitter
+            </a>
+          </div>
+          <div className="mt-16">
+            <a href="https://github.com/Fajar-27" className="social">
+              <BsGithub />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <ParticlesBg type="thick" bg={true} />
     </div>
   );
 }

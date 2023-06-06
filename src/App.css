@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "HYWenHei-85W";
+  src: url("../public/fonts/genshin.ttf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "HYWenHei-85W", "Microsoft YaHei", "PingFang SC",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  background: #ffffff21;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 24px;
+  max-width: 500px;
+  overflow: scroll;
+  height: 95vh;
+  scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.sign {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.typewriter {
+  color: #e6a90c;
+  font-weight: bold;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.social {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgba(19, 19, 19, 0.25);
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.social:hover {
+  background-color: #ffffff3f;
+  cursor: pointer;
 }
