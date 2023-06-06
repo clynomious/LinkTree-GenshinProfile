@@ -14,7 +14,6 @@ function Profile() {
         setData(response.data.player);
         setIcon(response.data.player.profilePicture.icon);
         setBg(response.data.player.nameCard.banner);
-        console.log(response.data.player);
       })
       .catch((error) => {
         console.error(error);
