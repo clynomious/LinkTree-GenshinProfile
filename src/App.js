@@ -64,7 +64,7 @@ function App() {
           </div>
         </div>
       </div>
-      <ParticlesBg type="thick" bg={true} />
+      <ParticlesBg type="random" bg={true} />
     </div>
   );
 }
