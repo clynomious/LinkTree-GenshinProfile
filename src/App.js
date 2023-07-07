@@ -23,7 +23,7 @@ function App() {
               <span className="typewriter">
                 <Typewriter
                   options={{
-                    strings: ["Random Guy", "Gamers", "Web Developer"],
+                    strings: ["Random Guy", "Gamers", "Ordinary human"],
                     autoStart: true,
                     loop: true,
                   }}
@@ -33,19 +33,19 @@ function App() {
           </div>
           <Profile />
           <div className="mt-16">
-            <a href="https://instagram.com/jar.cly" className="social">
+            <a href="https://instagram.com/fajar.cly" className="social">
               <BsInstagram />
               Instagram
             </a>
           </div>
           <div className="mt-16">
-            <a href="https://fb.com/jar.cly" className="social">
+            <a href="https://fb.com/fajar.cly" className="social">
               <FaFacebookSquare />
               Facebook
             </a>
           </div>
           <div className="mt-16">
-            <a href="https://tiktok.com/@jar.cly" className="social">
+            <a href="https://tiktok.com/@fajar.cly" className="social">
               <FaTiktok />
               TikTok
             </a>
@@ -57,7 +57,7 @@ function App() {
             </a>
           </div>
           <div className="mt-16">
-            <a href="https://github.com/Fajar-27" className="social">
+            <a href="https://github.com/FajarCly" className="social">
               <BsGithub />
               Github
             </a>
