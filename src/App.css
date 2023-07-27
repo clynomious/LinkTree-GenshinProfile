@@ -15,6 +15,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  background-color: rgba(19, 19, 19, 0.25);
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
@@ -66,7 +72,7 @@ body {
 }
 
 .typewriter {
-  color: #e6a90c;
+  color: #0011ad;
   font-weight: bold;
 }
 
@@ -90,4 +96,5 @@ body {
 .social:hover {
   background-color: #ffffff3f;
   cursor: pointer;
+  scale: 102%;
 }

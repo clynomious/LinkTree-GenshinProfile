@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Profile.module.css";
 import axios from "axios";
+import { FaCopy } from "react-icons/fa";
 
 function Profile() {
   const [data, setData] = useState("");
@@ -9,12 +10,11 @@ function Profile() {
 
   useEffect(() => {
     axios
-      .get("https://spfy.fajarxr.repl.co/genshin?uid=857067560")
+      .get("https://encly-api-production.up.railway.app/api/profile/857067560")
       .then((response) => {
-        setData(response.data.player);
-        setIcon(response.data.player.profilePicture.icon);
-        setBg(response.data.player.nameCard.banner);
-        console.log(response.data.player);
+        setData(response.data);
+        setIcon(response.data.profilePicture.icon);
+        setBg(response.data.nameCard.banner);
       })
       .catch((error) => {
         console.error(error);
@@ -28,12 +28,32 @@ function Profile() {
     backgroundRepeat: "no-repeat",
   };
 
+  const [isCopied, setIsCopied] = useState(false);
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText("857067560");
+    setIsCopied(true);
+
+    // Mengembalikan teks "Copied" menjadi "Copy" setelah 2 detik
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 2000);
+  };
+
   return (
     <div>
       <div className={style.card} style={BgCard}>
         <img src={icon} alt="Cly" className={style.profileImg} />
         <div className={style.uid}>
           <div className={style.uidNum}>UID: 857067560</div>
+        </div>
+        <div className={style.copy}>
+          <button
+            className={style.copyButton}
+            onClick={handleCopyClick}
+          >
+            <FaCopy /> {isCopied ? "Copied" : "Copy"}
+          </button>
         </div>
         <div className={style.name}>{data.nickname} </div>
         <div className={style.sign}>{data.signature}</div>

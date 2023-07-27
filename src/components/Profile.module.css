@@ -1,3 +1,7 @@
+* {
+  font-family: "HYWenHei-85W", "Microsoft YaHei", "PingFang SC",
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .card {
   position: relative;
   width: 450px;
@@ -36,6 +40,21 @@
   font-size: 9px;
 }
 
+.copy {
+  position: absolute;
+  width: 120px;
+  left: 11%;
+  top: 56%;
+}
+
+.copyButton {
+  background: transparent;
+  border: none;
+  color: #d3d3d3;
+  cursor: pointer;
+  font-size: 12px;
+}
+
 .name {
   position: absolute;
   left: calc(50% - 55px / 2 - 51px);
@@ -48,7 +67,7 @@
   position: absolute;
   left: calc(50% - 119px / 2 - 19px);
   top: calc(50% - 20px / 2 - 53px);
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
 }
 
@@ -185,6 +204,10 @@
     font-size: 6px;
   }
 
+  .copyButton {
+    font-size: 8px;
+  }
+
   .name {
     left: calc(50% - 53px / 2 - 28px);
     top: calc(50% - 26px / 2 - 58px);
@@ -194,7 +217,7 @@
   .sign {
     left: calc(50% - 82px / 2 - 13px);
     top: calc(50% - 13px / 2 - 36px);
-    font-size: 13x;
+    font-size: 8px;
   }
 
   .ar {
