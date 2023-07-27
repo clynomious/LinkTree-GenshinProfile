@@ -12,9 +12,10 @@ function Profile() {
     axios
       .get("https://encly-api-production.up.railway.app/api/profile/857067560")
       .then((response) => {
-        setData(response.data);
-        setIcon(response.data.profilePicture.icon);
-        setBg(response.data.nameCard.banner);
+        setData(response.data.player);
+        setIcon(response.data.player.profilePicture.icon);
+        setBg(response.data.player.nameCard.banner);
+        console.log(response.data.player);
       })
       .catch((error) => {
         console.error(error);
