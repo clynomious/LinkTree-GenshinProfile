@@ -7,16 +7,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
   font-family: "HYWenHei-85W", "Microsoft YaHei", "PingFang SC",
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 90%;
+  overflow: hidden;
 }
 
 .card {
@@ -93,4 +92,18 @@ body {
   background-color: #ffffff3f;
   cursor: pointer;
   scale: 102%;
+}
+
+
+
+@media screen and (max-height: 800px) {
+  .card {
+    max-height: 90vh;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .card {
+    max-height: 85vh;
+  }
 }
