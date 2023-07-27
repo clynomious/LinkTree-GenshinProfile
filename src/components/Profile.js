@@ -12,10 +12,9 @@ function Profile() {
     axios
       .get("https://encly-api-production.up.railway.app/api/profile/857067560")
       .then((response) => {
-        setData(response.data.player);
-        setIcon(response.data.player.profilePicture.icon);
-        setBg(response.data.player.nameCard.banner);
-        console.log(response.data.player);
+        setData(response.data);
+        setIcon(response.data.profilePicture.icon);
+        setBg(response.data.nameCard.banner);
       })
       .catch((error) => {
         console.error(error);
@@ -35,7 +34,6 @@ function Profile() {
     navigator.clipboard.writeText("857067560");
     setIsCopied(true);
 
-    // Mengembalikan teks "Copied" menjadi "Copy" setelah 2 detik
     setTimeout(() => {
       setIsCopied(false);
     }, 2000);
