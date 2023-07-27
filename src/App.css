@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .card {
@@ -94,16 +94,8 @@ body {
   scale: 102%;
 }
 
-
-
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 621px) {
   .card {
     max-height: 90vh;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .card {
-    max-height: 85vh;
   }
 }
