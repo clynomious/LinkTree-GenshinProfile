@@ -68,4 +68,8 @@
   .card-image {
     max-width: 300px;
   }
+
+  .loading {
+    height: 127px;
+  }
 }
