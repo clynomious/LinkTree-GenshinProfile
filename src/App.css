@@ -93,9 +93,3 @@ body {
   cursor: pointer;
   scale: 102%;
 }
-
-@media screen and (max-height: 621px) {
-  .card {
-    max-height: 90vh;
-  }
-}
