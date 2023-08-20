@@ -10,7 +10,7 @@
     border-radius: 24px;
     max-width: 500px;
     overflow: scroll;
-    max-height: 80vh;
+    max-height: 90vh;
     scrollbar-width: none;
     z-index: 2;
   }
