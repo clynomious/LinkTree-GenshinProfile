@@ -91,6 +91,7 @@
 
 .arNum {
   position: absolute;
+  top: 10%;
   left: 258px;
   color: #d3d3d3;
   font-size: 15px;
@@ -116,9 +117,10 @@
 
 .wlNum {
   position: absolute;
-  left: 258px;
+  left: 268px;
   color: #d3d3d3;
   font-size: 15px;
+  top: 10%;
 }
 
 .pamer {

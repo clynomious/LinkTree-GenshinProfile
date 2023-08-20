@@ -47,26 +47,19 @@ function Profile() {
           <div className={style.uidNum}>UID: 857067560</div>
         </div>
         <div className={style.copy}>
-          <button
-            className={style.copyButton}
-            onClick={handleCopyClick}
-          >
+          <button className={style.copyButton} onClick={handleCopyClick}>
             <FaCopy /> {isCopied ? "Copied" : "Copy"}
           </button>
         </div>
         <div className={style.name}>{data.nickname} </div>
         <div className={style.sign}>{data.signature}</div>
         <div className={style.ar}>
-          <div className={style.arText}>
-            Adventure Rank
-            <span className={style.arNum}>{data.level}</span>
-          </div>
+          <div className={style.arText}>Adventure Rank</div>
+          <span className={style.arNum}>{data.level}</span>
         </div>
         <div className={style.wl}>
-          <div className={style.wlText}>
-            Level Dunia
-            <span className={style.wlNum}>{data.worldLevel}</span>
-          </div>
+          <div className={style.wlText}>Level Dunia</div>
+          <p className={style.wlNum}>{data.worldLevel}</p>
         </div>
         <div className={style.pamer}>
           <img

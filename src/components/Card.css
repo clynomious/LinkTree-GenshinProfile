@@ -1,6 +1,5 @@
 .container {
   background-color: rgba(19, 19, 19, 0.25);
-  border: 2px solid #ffffff;
   border-radius: 15px;
   margin-top: 12px;
   width: 450px;
@@ -14,7 +13,7 @@
 .character-button {
   margin: 5px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 2px solid #ffffffec;
   width: 45px;
   height: 45px;
   display: flex;
@@ -56,8 +55,9 @@
 
   .character-button {
     margin: 3px;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ffffff;
   }
 
   .character-icon {
@@ -66,7 +66,7 @@
   }
 
   .card-image {
-    max-width: 300px;
+    max-width: 310px;
   }
 
   .loading {
