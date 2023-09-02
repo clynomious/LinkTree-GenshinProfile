@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
   }
 .card {
     background: #ffffff21;
@@ -10,7 +10,7 @@
     border-radius: 24px;
     max-width: 500px;
     overflow: scroll;
-    max-height: 90vh;
+    max-height: 90dvh;
     scrollbar-width: none;
     z-index: 2;
   }
